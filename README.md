@@ -6,7 +6,7 @@ Full-Stack-Project2
 ## Build Status
 ~ ***In progress*** ~
 
-### **_[LINK TO DEPLOYED APPLICATION]()_**
+### **_[LINK TO DEPLOYED APPLICATION](https://budget-buddy-app-8dd8c87303e9.herokuapp.com/)_**
 
 ## Description :
 
