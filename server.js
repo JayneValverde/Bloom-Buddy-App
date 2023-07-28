@@ -19,7 +19,8 @@ app.set('view engine', 'handlebars');
 
 // Testing purposes 
 // Define the new route
-app.get("/home", (req, res) => {
+app.get("/", (req, res) => {
+  // res.send("<h2>HELLLOOOO WOOOOORLD!</h1>")
     // Render the home template
     res.render('home'); // Assuming you have a template engine like Handlebars set up
   });
