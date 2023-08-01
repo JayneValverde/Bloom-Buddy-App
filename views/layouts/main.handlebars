@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Bloom Buddy App</title>
-    <link type="text/css" rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="/css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,12 +19,14 @@
 <body>
     <div class="wrapper">
         <header class="hero">
-            
             <div>
                 {{!-- NAV BAR --}}
+                {{!-- APP TITLE  --}}
+                <h1 class="app-title">Bloom Buddy </h1> 
                 <nav class="nav">
                     <a class="link" href="/">Home</a>
                     <a class="link" href="/dashboard">Dashboard</a>
+
                     {{#if loggedIn}}
                     <a class="link" href="/" id="logout">Logout</a>
                     {{else}}
@@ -32,20 +34,21 @@
                     {{/if}}
                 </nav>
             </div>
-            {{!-- APP TITLE  --}}
-            <h1 class="app-title"> <i class=" fab "></i>Bloom Buddy </h1> 
-        
         </header>
 
+        <!-- Render the sub layout -->
+        {{{ body }}}
 
-        {{!-- <main>
-            {{{ body }}}
-        </main> --}}
+        </main>
+
+        <footer>
+            
+        </footer>
 
     </div>
 
-    {{#if loggedIn}}
-    <script src="/javascript/logout.js"></script>
+    {{#if logged_in}}
+    <script src="/js/logout.js"></script>
     {{/if}}
 
 </body>

@@ -1,0 +1,28 @@
+{{!---------- NEEDS EDIT ----------}}<!-- Loop over each object in the projects array -->
+{{#each blogs as |blog|}}
+<div class="row mb-4 blog">
+    <div class="col-md-5">
+        <h2>
+            <!-- Call helper function with triple brackets to render the emoji span as HTML -->
+            {{{get_emoji}}}
+            <a href="/blog/{{blog.id}}">{{blog.title}}</a>
+        </h2>
+        <p>
+            
+            <!-- Pass plant_tag value to the helper function -->
+            <span class="plant-tag">{{format_amount
+                blog.plant_tags
+                }}</span>
+        </p>
+        <p>Created by
+            {{blog.user.name}}
+            on
+            {{format_date blog.date_created}}</p>
+    </div>
+    <div class="col-md-7">
+        <p>
+            {{blog.post}}
+        </p>
+    </div>
+</div>
+{{/each}}
