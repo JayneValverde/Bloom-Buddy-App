@@ -1,0 +1,18 @@
+[
+    {
+      "name": "Music Near Me",
+      "Blog_Post": "A mobile app that will send you notifications whenever a concert is playing in your area.",
+      "Plant_Tags": 5000
+    },
+    {
+      "name": "The Ultimate Tech Quiz",
+      "Blog_Post": "A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!",
+      "Plant_Tags": 10000
+    },
+    {
+      "name": "Roll 'Em Up",
+      "Blog_Post": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes.",
+      "Plant_Tags": 800
+    }
+  ]
+  
