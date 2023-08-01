@@ -1,17 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>BudgetBuddy</title>
-    <!-- Add your CSS links here -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bloom Buddy App</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;1,300&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    
+    
 </head>
+
 <body>
-    <header>
-        <!-- Add your header content (e.g., navigation) here -->
-    </header>
-    {{{ body }}}
-    <footer>
-        <!-- Add your footer content here -->
-    </footer>
-    <!-- Add your JS script tags here -->
+    <div class="wrapper">
+        <header class="hero">
+            
+            <div>
+                {{!-- NAV BAR --}}
+                <nav class="nav">
+                    <a class="link" href="/">Home</a>
+                    <a class="link" href="/dashboard">Dashboard</a>
+                    {{#if loggedIn}}
+                    <a class="link" href="/" id="logout">Logout</a>
+                    {{else}}
+                    <a class="link" href="/login">Login</a>
+                    {{/if}}
+                </nav>
+            </div>
+            {{!-- APP TITLE  --}}
+            <h1 class="app-title"> <i class=" fab "></i>Bloom Buddy </h1> 
+        
+        </header>
+
+
+        {{!-- <main>
+            {{{ body }}}
+        </main> --}}
+
+    </div>
+
+    {{#if loggedIn}}
+    <script src="/javascript/logout.js"></script>
+    {{/if}}
+
 </body>
+
 </html>

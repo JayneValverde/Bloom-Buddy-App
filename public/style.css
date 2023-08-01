@@ -1,0 +1,54 @@
+:root {
+    --primary:  #fbfedf;
+    /* --secondary: #dce9d5;
+    --tertiary: #788585;
+    --light-dark: #a1a0a1;
+    --dark: #201110; */
+    --border-radius: .3rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary);
+    margin: 2rem;
+    padding: 0;
+    /* line-height: 1.5; */
+    font-size: 24px;
+}
+
+/* APP TITLE  */
+h1 {
+    text-align: center;
+    font-family: "Playfair Display", sans-serif;
+    color: #262619; 
+    font-size: 85px;
+    font-weight: 700;
+    margin: 0;
+}
+
+h2 {
+    font-family: "Mulish" ,sans-serif;
+    color: #262619;
+    font-size: 13px;
+
+}
+
+/* NAV BAR BUTTONS / TYPE */
+a {
+    padding: 0px 10px 0px 10px;
+    font-family: "Mulish", sans-serif;
+    color: #262619;
+}
+
+/* NAV BAR */
+.nav {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #f96c14;
+    border-radius: 25px;
+    padding: 8px;
+}
